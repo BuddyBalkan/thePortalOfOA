@@ -14,7 +14,6 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
  * 用于封装并读取resource中URLs的RESTUser.properties
  */
 @Configuration
-@ComponentScan(basePackages = {"restUserConfig"})
 @PropertySource(value = "classpath:properties/RESTUser.properties")
 public class RestUserConfig {
 

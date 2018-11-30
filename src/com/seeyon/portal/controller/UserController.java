@@ -2,6 +2,7 @@ package com.seeyon.portal.controller;
 
 import java.io.IOException;
 
+import com.seeyon.portal.service.TargetSysService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,12 +11,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.seeyon.portal.service.UserService;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @Controller
 @RequestMapping(value="/user")
 public class UserController {
 	@Autowired
 	private UserService userService;
+
+	@Autowired
+	private TargetSysService targetSysService;
 	
 	private Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 	
@@ -47,5 +53,23 @@ public class UserController {
 			message="登录成功";
 		}
 		return message;
+	}
+
+
+
+	public String createTicket(){
+
+		return new String("tikcet");
+	}
+
+	public boolean handShankeWithOA(String ticket){
+
+		return true;
+	}
+
+	@RequestMapping(value = "/loginTo", method = RequestMethod.POST)
+	public void loginToOASystem(@RequestParam String oaUserName, @RequestParam String targetSystem){
+
+
 	}
 }

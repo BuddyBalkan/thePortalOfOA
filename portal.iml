@@ -11,10 +11,13 @@
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/spring/spring-spadeSSO-plugin.xml</file>
-          <file>file://$MODULE_DIR$/config/spring/applicatationContext-controller.xml</file>
+        <fileset id="fileset2" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/config/spring/applicationContext-service.xml</file>
+          <file>file://$MODULE_DIR$/config/spring/applicationContext-jpa.xml</file>
+          <file>file://$MODULE_DIR$/config/spring/applicationContext-transaction.xml</file>
           <file>file://$MODULE_DIR$/config/spring/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/spring/spring-spadeSSO-plugin.xml</file>
+          <file>file://$MODULE_DIR$/config/spring/springmvc.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -31,5 +34,6 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="library" scope="PROVIDED" name="LiuXingkai" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="OAuser" level="application" />
+    <orderEntry type="library" name="zhouyixiu" level="application" />
   </component>
 </module>

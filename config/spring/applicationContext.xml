@@ -3,6 +3,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
+    <import resource="applicationContext-jpa.xml"/>
+    <import resource="applicationContext-service.xml"/>
+    <import resource="applicationContext-transaction.xml"/>
 
 </beans>
