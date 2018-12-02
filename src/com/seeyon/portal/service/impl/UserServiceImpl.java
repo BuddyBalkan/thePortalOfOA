@@ -11,7 +11,9 @@ import com.seeyon.portal.controller.UserController;
 import com.seeyon.portal.restusertools.GetRestUserToken;
 import com.seeyon.portal.service.UserService;
 import com.seeyon.portal.utils.HttpClientUtil;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserServiceImpl implements UserService{
 	
 	private GetRestUserToken userToken = new GetRestUserToken();

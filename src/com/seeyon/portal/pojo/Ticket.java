@@ -4,24 +4,23 @@ package com.seeyon.portal.pojo;
 public class Ticket {
 
 
-    private String targetSystem;
+    private String targetSystemName;
 
-    private String ticeketContext;
+    private String loginUserName;
 
-    public String getTiceketContext() {
-        return ticeketContext;
+    public String getTargetSystemName() {
+        return targetSystemName;
     }
 
-    public void setTiceketContext(String ticeketContext) {
-        this.ticeketContext = ticeketContext;
+    public void setTargetSystemName(String targetSystemName) {
+        this.targetSystemName = targetSystemName;
     }
 
-    public String getTargetSystem() {
-        return targetSystem;
+    public String getLoginUserName() {
+        return loginUserName;
     }
 
-    public void setTargetSystem(String targetSystem) {
-        this.targetSystem = targetSystem;
+    public void setLoginUserName(String loginUserName) {
+        this.loginUserName = loginUserName;
     }
-
 }
