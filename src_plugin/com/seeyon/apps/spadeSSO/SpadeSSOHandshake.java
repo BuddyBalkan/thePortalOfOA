@@ -2,7 +2,7 @@ package com.seeyon.apps.spadeSSO;
 
 import com.seeyon.ctp.portal.sso.SSOLoginHandshakeAbstract;
 
-public class SpadeSSOLoginImp extends SSOLoginHandshakeAbstract {
+public class SpadeSSOHandshake extends SSOLoginHandshakeAbstract {
 
         // “ticket” 就是ticket取得的参数值
         @Override

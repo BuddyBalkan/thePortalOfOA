@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.google.gson.Gson;
-import com.seeyon.portal.pojo.TargetSystem;
-import com.seeyon.portal.pojo.Ticket;
 import com.seeyon.portal.service.TargetSysService;
 import org.apache.http.Header;
 import org.apache.http.NameValuePair;
@@ -52,17 +50,17 @@ public class UserController {
 		String message = "未知错误";
 		if(username==null || "".equals(username)){
 			LOGGER.info("用户名不能为空");
-			return message="用户不能为空";
+			return message ="用户不能为空";
 		}
 		if(password==null || "".equals(password)){
 			LOGGER.info("密码不能为空");
-			return message="密码不能为空";
+			return message ="密码不能为空";
 		}
-		LOGGER.info("开始登录,用户名为{}",username);
+		LOGGER.info("开始登录,用户名为{}", username);
 		
 		String result = userService.loginByPassword(username, password);
 		
-		if(result==null||"".equals(result)){
+		if(result == null || "".equals(result)){
 			LOGGER.info("用户名密码不能为空");
 			return message="用户名密码不能为空";
 		}
@@ -72,7 +70,7 @@ public class UserController {
 		}
 		if(result.equals("true")){
 			LOGGER.info("登录成功");
-			message="登录成功";
+			message = "登录成功";
 		}
 		return message;
 	}
@@ -88,7 +86,6 @@ public class UserController {
 	public String createTicket(String tagSys, String userNameForTargetSys){
         Ticket ticket = new Ticket();
         try {
-            ticket.setTargetSystemName(new String(tagSys.getBytes("UTF-8")));
             ticket.setLoginUserName(new String(userNameForTargetSys.getBytes("UTF-8")));
             LOGGER.info("成功生成SSO所需ticket：{}", gson.toJson(ticket));
         } catch (UnsupportedEncodingException e) {
@@ -179,11 +176,24 @@ public class UserController {
         String ticket = createTicket(targetSystem.getTargetSysName(), oaUserName);
         if (handShakeWithOA(targetSystemName, ticket)) {
             LOGGER.info("用户已成功登入到目标系统");
-            return new ModelAndView("http://127.0.0.1:81/seeyon");
+            return new ModelAndView("redirect:" + "");
         }
         LOGGER.warn("登入目标系统出错");
         return new ModelAndView("/login_error");
 
 
+    }
+
+    class Ticket {
+
+        private String loginUserName;
+
+        public String getLoginUserName() {
+            return loginUserName;
+        }
+
+        public void setLoginUserName(String loginUserName) {
+            this.loginUserName = loginUserName;
+        }
     }
 }

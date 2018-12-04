@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
  * @date 2018.11.28 16:40
  * 用于封装REST用户的信息 包括访问请求token的URL地址
  */
-@Component
 public class RestUser {
 
     private String userName;

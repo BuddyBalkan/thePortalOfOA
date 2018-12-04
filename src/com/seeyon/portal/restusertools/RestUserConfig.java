@@ -24,6 +24,7 @@ public class RestUserConfig {
 
     @Value("${RESTUserPassword}")
     private String password;
+
     @Value("${RESTUserForTokenUrl}")
     private String restUserUrl;
 
