@@ -1,0 +1,2 @@
+2018-12-02 16:57:46  [ main:0 ] - [ DEBUG ]  Spring Data JPA - Registering repository: principalRepository - Interface: com.seeyon.portal.dao.PrincipalRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2018-12-02 17:02:00  [ main:0 ] - [ DEBUG ]  Spring Data JPA - Registering repository: principalRepository - Interface: com.seeyon.portal.dao.PrincipalRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean

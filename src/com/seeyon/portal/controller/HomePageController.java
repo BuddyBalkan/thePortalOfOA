@@ -28,6 +28,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author 刘星锴
+ */
 @Controller
 @RequestMapping(value = "/homepage")
 public class HomePageController {
@@ -132,6 +135,11 @@ public class HomePageController {
         return result;
     }
 
+    /**
+     * 单点登入到OA系统中 并跳转到OA登入后的主页面
+     * @param request 获取session用
+     * @return 跳转成功 则到OA系统登入后的主页面 失败则跳转登入失败页面
+     */
     @RequestMapping(value = "/loginTo", method = RequestMethod.POST)
     public ModelAndView loginToOtherSystem(HttpServletRequest request){
 
@@ -153,6 +161,9 @@ public class HomePageController {
 
     }
 
+    /**
+     * 临时使用 用于生成ticket的json类
+     */
     class Ticket {
 
         private String loginUserName;

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 /**
- * @author LiuXingkai
+ * @author 刘星锴
  * @date 2018.11.28 16:40
  * 用于封装并读取resource中URLs的RESTUser.properties
  */

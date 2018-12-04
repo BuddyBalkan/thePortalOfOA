@@ -47,7 +47,7 @@ public class HttpClientUtil {
             // 创建http GET请求
             HttpGet httpGet = new HttpGet(uri);
             if(header != null){
-            	for (String key:header.keySet()){
+            	for (String key : header.keySet()){
                     httpGet.addHeader(key,header.get(key));
             	}
             }

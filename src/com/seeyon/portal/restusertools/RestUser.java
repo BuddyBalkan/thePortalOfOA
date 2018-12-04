@@ -3,7 +3,7 @@ package com.seeyon.portal.restusertools;
 import org.springframework.stereotype.Component;
 
 /**
- * @author LiuXingkai
+ * @author 刘星锴
  * @date 2018.11.28 16:40
  * 用于封装REST用户的信息 包括访问请求token的URL地址
  */

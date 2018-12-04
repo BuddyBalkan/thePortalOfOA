@@ -1,0 +1,18 @@
+2018-12-03 16:33:37  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-12-03 16:33:38  [ main:475 ] - [ DEBUG ]  Registered plugin: 'com.github.pagehelper.PageInterceptor@38f2e97e'
+2018-12-03 16:33:38  [ main:675 ] - [ DEBUG ]  Parsed configuration file: 'class path resource [config/sqlMapConfig.xml]'
+2018-12-03 16:33:38  [ main:678 ] - [ DEBUG ]  Property 'mapperLocations' was not specified or no matching resources found
+2018-12-03 16:33:38  [ main:1368 ] - [ INFO ]  {dataSource-1} inited
+2018-12-03 16:33:39  [ main:1774 ] - [ DEBUG ]  验证用户是否存在，用户名为wangbadan
+2018-12-03 16:33:39  [ main:1779 ] - [ DEBUG ]  Creating a new SqlSession
+2018-12-03 16:33:39  [ main:1794 ] - [ DEBUG ]  Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49cf9028]
+2018-12-03 16:33:39  [ main:1846 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a7d1b47] will be managed by Spring
+2018-12-03 16:33:39  [ main:1851 ] - [ DEBUG ]  ==>  Preparing: SELECT login_name,password,create_date,update_date,is_enable,member_id FROM person_login WHERE login_name = ? 
+2018-12-03 16:33:39  [ main:1876 ] - [ DEBUG ]  ==> Parameters: wangbadan(String)
+2018-12-03 16:33:39  [ main:1895 ] - [ DEBUG ]  <==      Total: 1
+2018-12-03 16:33:39  [ main:1896 ] - [ DEBUG ]  Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49cf9028]
+2018-12-03 16:33:39  [ main:1896 ] - [ DEBUG ]  校验成功，登录信息合法
+2018-12-03 16:33:39  [ main:1897 ] - [ DEBUG ]  Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49cf9028]
+2018-12-03 16:33:39  [ main:1897 ] - [ DEBUG ]  Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49cf9028]
+2018-12-03 16:33:39  [ main:1898 ] - [ DEBUG ]  Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49cf9028]
+2018-12-03 16:33:39  [ Thread-1:1912 ] - [ INFO ]  {dataSource-1} closed
