@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ctpConfig>
-    <spadeSSO>
+    <portal>
         <test name="test配置">插件配置测试</test>
-    </spadeSSO>
+    </portal>
 </ctpConfig>

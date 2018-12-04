@@ -2,50 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57232733-13ef-4573-954d-1357aa5768d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginCfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginProperties.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/spring/spring-spadeSSO-plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/properties/JDBC.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/properties/RESTUser.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/properties/TargetSystem.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/properties/sqlMapConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/spring/applicationContext-dao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/spring/applicationContext-service.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/spring/applicationContext-transaction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/spring/springMVC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/LiuXingkai/hibernate-entitymanager-5.0.12.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/LiuXingkai/pagehelper-5.1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/LiuXingkai/spring-data-commons-2.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/LiuXingkai/spring-data-jpa-2.1.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/zhouyixiu/mapper-3.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/zhouyixiu/mybatis-3.4.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/zhouyixiu/mybatis-spring-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/zhouyixiu/pagehelper-5.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/properties/JDBC.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/properties/RESTUser.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/properties/SSOToOASys.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/properties/sqlMapConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/seeyon/portal/controller/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/GetRestUserToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUserToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/TargetSysService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/TestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/seeyon/portal/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/TargetSysServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/TestServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/spadeSSO/SSOLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/spadeSSO/TargetSystemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/test/TestForGetRest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/test/TicketTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/test/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/seeyon/portal/utils/HttpClientUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/hello.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config/JDBC.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/config/JDBC.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config/RESTUser.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/config/RESTUser.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config/SSOToOASys.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/config/SSOToOASys.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/config/sqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/applicationContext-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/applicationContext-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/spring/applicationContext-transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/applicationContext-transaction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/controller/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/dao/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/DepartmentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/DepartmentInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/NewsTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/NewsTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/OrgAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/OrgAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/OrgLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/OrgLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/OrgPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/OrgPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/PersonInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/PersonInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/PersonLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/PersonLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/TargetSystemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/TargetSystemConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/TheOASysProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/pojo/TheOASysProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Undone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Undone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Unit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/pojo/RestUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/RestUserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/test/TestForGetRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/test/TestForGetRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/test/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/test/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/HttpClientUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/RestWebServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/RestWebServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XML/DepartmentDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XML/DepartmentDom4j.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XML/MemberDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XML/MemberDom4j.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XML/OrgLevelDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XML/OrgLevelDom4j.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XML/OrgPostDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XML/OrgPostDom4j.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XMLtoPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XMLtoPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XStreamHandleUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XStreamHandleUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/WebContent/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,9 +65,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/controller/HomePageController.java">
+        <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/controller/HomePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
+            <state relative-caret-position="1083">
               <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,32 +85,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="60" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/BaseService.java">
+        <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/pojo/RestUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
               <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
@@ -114,43 +107,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/TheOASysProperties.java">
+        <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/RestUserConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/pojo/TheOASysProperties.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/Undone.java">
+        <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/TargetSystemConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="589">
+              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/Unit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/impl/BaseServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginCfg.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginProperties.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/impl/DepartmentServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/DepartmentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -178,7 +192,6 @@
         <option value="$PROJECT_DIR$/src_plugin/com/seeyon/apps/spadeSSO/SpadeSSO.java" />
         <option value="$PROJECT_DIR$/src_plugin/com/seeyon/apps/spadeSSO/SpadeSSOInitializer.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/spring/spring-spadeSSO-plugin.xml" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml" />
         <option value="$PROJECT_DIR$/src/com/seeyon/portal/spadeSSO/TiecketCreatation.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/config/spring/springMVC.xml" />
@@ -213,6 +226,11 @@
         <option value="$PROJECT_DIR$/src/com/seeyon/portal/pojo/TargetSystemConfig.java" />
         <option value="$PROJECT_DIR$/src/com/seeyon/portal/spadeSSO/SSOLogin.java" />
         <option value="$PROJECT_DIR$/src/com/seeyon/portal/controller/HomePageController.java" />
+        <option value="$PROJECT_DIR$/src_plugin/portal/utils/config/TargetSystemConfig.java" />
+        <option value="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/TargetSystemConfig.java" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginCfg.xml" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginProperties.xml" />
       </list>
     </option>
   </component>
@@ -225,7 +243,7 @@
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_HOME" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
@@ -255,68 +273,26 @@
             <path>
               <item name="portal" type="b2602c69:ProjectViewProjectNode" />
               <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="restusertools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
               <item name="src_plugin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portal" type="b2602c69:ProjectViewProjectNode" />
               <item name="portal" type="462c0819:PsiDirectoryNode" />
               <item name="src_plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src_plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src_plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="spadeSSO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,6 +320,15 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="cfgHome" type="462c0819:PsiDirectoryNode" />
               <item name="plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="cfgHome" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portal" type="b2602c69:ProjectViewProjectNode" />
@@ -382,7 +367,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543916154950" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543916794866" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/WEB-INF/lib/LiuXingkai/spring-data-jpa-2.1.2.RELEASE.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -393,13 +378,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Desktop\OA系统的门户网站开发\svn专用\黑桃Ⅱ组\portal\WebContent\WEB-INF\cfgHome\plugin\portal" />
       <recent name="E:\Desktop\OA系统的门户网站开发\svn专用\黑桃Ⅱ组\portal\WebContent\WEB-INF\lib\LiuXingkai" />
       <recent name="E:\Desktop\OA系统的门户网站开发\svn专用\黑桃Ⅱ组\portal\WebContent\WEB-INF\lib" />
       <recent name="E:\Desktop\OA系统的门户网站开发\svn专用\黑桃Ⅱ组\portal\WebContent\WEB-INF" />
       <recent name="E:\Desktop\OA系统的门户网站开发\svn专用\黑桃Ⅱ组\portal" />
-      <recent name="E:\Desktop\OA系统的门户网站开发\svn专用\黑桃Ⅱ组\portal\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Desktop\OA系统的门户网站开发\svn专用\黑桃Ⅱ组\portal\WebContent\WEB-INF\cfgHome\plugin\portal" />
       <recent name="E:\Desktop\OA系统的门户网站开发\svn专用\黑桃Ⅱ组\portal" />
     </key>
   </component>
@@ -500,7 +486,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41708000" />
+    <option name="totallyTimeSpent" value="42348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -512,10 +498,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3911111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -589,15 +575,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="修改前的备份" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/LiuXingkai/spring-data-jpa-2.1.2.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/LiuXingkai/spring-data-jpa-1.8.0.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class" />
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/spadeSSO/BaseService.java" />
     <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/spadeSSO/BaseServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/TargetSysService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -615,17 +592,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/Ticket.java" />
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginCfg.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
@@ -663,37 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUserConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="e#858#882#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -715,7 +654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/dao/DepartmentDao.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/dao/DepartmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -738,108 +677,91 @@
     <entry file="file://$PROJECT_DIR$/config/properties/SSOToOASys.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/Department.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Department.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/DepartmentInfo.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/DepartmentInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/Member.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Member.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/News.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/News.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/NewsTypes.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/NewsTypes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/OrgAccount.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/OrgAccount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/People.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/People.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/PersonInfo.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/PersonInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/PersonLogin.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/PersonLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/Principal.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/TargetSystemConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/TheOASysProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/Undone.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Undone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/pojo/Unit.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/impl/BaseServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/BaseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -890,7 +812,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
@@ -900,9 +822,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/controller/HomePageController.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/DepartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="60" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/controller/HomePageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
           <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -919,30 +868,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/BaseService.java">
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/pojo/RestUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/RestUserConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/pojo/TheOASysProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/TargetSystemConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/impl/DepartmentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginCfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seeyon/portal/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="60" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginProperties.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
