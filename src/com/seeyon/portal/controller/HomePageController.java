@@ -1,12 +1,5 @@
 package com.seeyon.portal.controller;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.google.gson.Gson;
 import com.seeyon.portal.pojo.TargetSystemConfig;
 import com.seeyon.portal.pojo.TheOASysProperties;
@@ -20,65 +13,33 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.seeyon.portal.service.UserService;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Controller
-@RequestMapping(value="/user")
-public class UserController {
-	@Autowired
-	private UserService userService;
+@RequestMapping(value = "/homepage")
+public class HomePageController {
 
-	private Gson gson = new Gson();
+    private Gson gson = new Gson();
 
-	private AnnotationConfigApplicationContext context;
+    private AnnotationConfigApplicationContext context;
 
-	private static final String SSO_OK = "SSOOK";
-	private static final String SSO_ERROR = "SSOError";
-	private static final String USER_NAME_IN_SESSION = "USER_NAME";
+    private static final String SSO_OK = "SSOOK";
+    private static final String SSO_ERROR = "SSOError";
 
-	private Logger LOGGER = LoggerFactory.getLogger(UserController.class);
-	
-	@RequestMapping(value="/login",method=RequestMethod.POST)
-	public String login(String username,String password) throws IOException{
-		String message = "未知错误";
-		if(username==null || "".equals(username)){
-			LOGGER.info("用户名不能为空");
-			return message ="用户不能为空";
-		}
-		if(password==null || "".equals(password)){
-			LOGGER.info("密码不能为空");
-			return message ="密码不能为空";
-		}
-		LOGGER.info("开始登录,用户名为{}", username);
-		
-		String result = userService.loginByPassword(username, password);
-		
-		if(result == null || "".equals(result)){
-			LOGGER.info("用户名密码不能为空");
-			return message="用户名密码不能为空";
-		}
-		if(result.equals("false")){
-			LOGGER.info("用户名密码错误");
-			return message="用户名密码错误";
-		}
-		if(result.equals("true")){
-			LOGGER.info("登录成功");
-			message = "登录成功";
-		}
-		return message;
-	}
-
+    private Logger LOGGER = LoggerFactory.getLogger(HomePageController.class);
 
     /**
      * 根据目标系统名称以及登入用户名生成ticket
@@ -86,7 +47,7 @@ public class UserController {
      * @param userNameForTargetSys 登入用户名
      * @return ticket的json字符串
      */
-	public String createTicket(String userNameForTargetSys){
+    public String createTicket(String userNameForTargetSys){
         Ticket ticket = new Ticket();
         try {
             ticket.setLoginUserName(new String(userNameForTargetSys.getBytes("UTF-8")));
@@ -95,7 +56,7 @@ public class UserController {
             e.printStackTrace();
         }
         return gson.toJson(ticket);
-	}
+    }
 
     /**
      * 与目标系统握手方法（目前仅限OA系统）
@@ -103,7 +64,7 @@ public class UserController {
      * @param ticket ticket的json字符串
      * @return 是否握手成功
      */
-	public boolean handShakeWithOA(TheOASysProperties properties, String ticket){
+    public boolean handShakeWithOA(TheOASysProperties properties, String ticket){
         Map<String, String> params = new HashMap<>(16);
         params.put("from", properties.getHandshakeBean());
         params.put("ticket", ticket);
@@ -120,7 +81,7 @@ public class UserController {
             return false;
         }
 
-	}
+    }
 
     /**
      * 与其他系统握手的访问请求
@@ -128,7 +89,7 @@ public class UserController {
      * @param params 握手时候所要传入的参数
      * @return 目前仅限OA系统 故返回response的headers map形式
      */
-	public Map<String, String> loginToOtherSysHttpPost(String url, Map<String, String> params){
+    public Map<String, String> loginToOtherSysHttpPost(String url, Map<String, String> params){
         // 创建Httpclient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
@@ -171,17 +132,17 @@ public class UserController {
         return result;
     }
 
-	@RequestMapping(value = "/loginTo", method = RequestMethod.POST)
-	public ModelAndView loginToOtherSystem(HttpServletRequest request){
+    @RequestMapping(value = "/loginTo", method = RequestMethod.POST)
+    public ModelAndView loginToOtherSystem(HttpServletRequest request){
 
         HttpSession session = request.getSession();
         context = new AnnotationConfigApplicationContext(TargetSystemConfig.class);
         TheOASysProperties properties = (TheOASysProperties) context.getBean("The_OA_Properties");
         LOGGER.info("成功获取到OA单点登入的配置文件信息");
-        if (session.getAttribute(USER_NAME_IN_SESSION) == null){
+        if (session.getAttribute(UserController.USER_NAME_IN_SESSION) == null){
             return new ModelAndView("/login_error");
         }
-        String ticket = createTicket(((String) session.getAttribute(USER_NAME_IN_SESSION)));
+        String ticket = createTicket(((String) session.getAttribute(UserController.USER_NAME_IN_SESSION)));
         if (handShakeWithOA(properties, ticket)) {
             LOGGER.info("用户已成功登入到目标系统");
             return new ModelAndView("redirect:" + properties.getRedirectUrl());
@@ -204,4 +165,6 @@ public class UserController {
             this.loginUserName = loginUserName;
         }
     }
+
+
 }
