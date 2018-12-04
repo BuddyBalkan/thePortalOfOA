@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57232733-13ef-4573-954d-1357aa5768d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginCfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginProperties.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/hello.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/JDBC.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/config/JDBC.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/RESTUser.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/config/RESTUser.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/SSOToOASys.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/config/SSOToOASys.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/config/sqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/applicationContext-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/applicationContext-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/spring/applicationContext-transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/applicationContext-transaction.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/spring/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/controller/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/dao/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/DepartmentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/DepartmentInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/NewsTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/NewsTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/OrgAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/OrgAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/OrgLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/OrgLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/OrgPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/OrgPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/PersonInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/PersonInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/PersonLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/PersonLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/TargetSystemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/TargetSystemConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/TheOASysProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/pojo/TheOASysProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Undone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Undone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/pojo/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/po/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/pojo/RestUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/restusertools/RestUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/config/RestUserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/BaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/test/TestForGetRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/test/TestForGetRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/test/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/test/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/HttpClientUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/RestWebServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/RestWebServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XML/DepartmentDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XML/DepartmentDom4j.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XML/MemberDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XML/MemberDom4j.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XML/OrgLevelDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XML/OrgLevelDom4j.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XML/OrgPostDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XML/OrgPostDom4j.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XMLtoPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XMLtoPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/seeyon/portal/utils/XStreamHandleUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_plugin/com/seeyon/apps/portal/utils/XStreamHandleUtil.java" afterDir="false" />
-    </list>
+    <list default="true" id="57232733-13ef-4573-954d-1357aa5768d6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/WebContent/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginProperties.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -158,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -268,11 +215,6 @@
             <path>
               <item name="portal" type="b2602c69:ProjectViewProjectNode" />
               <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
               <item name="src_plugin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -367,7 +309,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543916794866" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543918585965" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/WEB-INF/lib/LiuXingkai/spring-data-jpa-2.1.2.RELEASE.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -486,7 +428,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42348000" />
+    <option name="totallyTimeSpent" value="43790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,7 +441,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3911111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -912,14 +853,14 @@
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/spadeSSO/pluginProperties.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/cfgHome/plugin/portal/pluginProperties.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -987,11 +928,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|portal</last-edited>
+          <last-edited>portal</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

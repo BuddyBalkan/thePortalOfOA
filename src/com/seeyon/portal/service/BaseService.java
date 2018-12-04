@@ -1,10 +1,11 @@
-package com.seeyon.apps.portal.service;
+package com.seeyon.portal.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+import tk.mybatis.mapper.common.Mapper;
 
 public interface BaseService<T> {
 	//根据id查询一个
