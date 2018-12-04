@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.google.gson.Gson;
-import com.seeyon.portal.service.TargetSysService;
+import com.seeyon.portal.pojo.TargetSystemConfig;
+import com.seeyon.portal.pojo.TheOASysProperties;
 import org.apache.http.Header;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -20,13 +21,16 @@ import org.apache.http.message.BasicNameValuePair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller; 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.seeyon.portal.service.UserService;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 
 @Controller
@@ -35,13 +39,13 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@Autowired
-	private TargetSysService targetSysService;
-
 	private Gson gson = new Gson();
+
+	private AnnotationConfigApplicationContext context;
 
 	private static final String SSO_OK = "SSOOK";
 	private static final String SSO_ERROR = "SSOError";
+	private static final String USER_NAME_IN_SESSION = "USER_NAME";
 
 	private Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 	
@@ -79,11 +83,10 @@ public class UserController {
     /**
      * 根据目标系统名称以及登入用户名生成ticket
      * ticket为json {"targetSystemName":"utf-8编码后的目标系统名称值" , "loginUserName":"utf-8编码后的登入用户名值"}
-     * @param tagSys 目标系统的名称
      * @param userNameForTargetSys 登入用户名
      * @return ticket的json字符串
      */
-	public String createTicket(String tagSys, String userNameForTargetSys){
+	public String createTicket(String userNameForTargetSys){
         Ticket ticket = new Ticket();
         try {
             ticket.setLoginUserName(new String(userNameForTargetSys.getBytes("UTF-8")));
@@ -96,16 +99,15 @@ public class UserController {
 
     /**
      * 与目标系统握手方法（目前仅限OA系统）
-     * @param targetSystemName 目标系统的名称
+     * @param properties 目标系统的java配置（仅OA）
      * @param ticket ticket的json字符串
      * @return 是否握手成功
      */
-	public boolean handShakeWithOA(String targetSystemName, String ticket){
+	public boolean handShakeWithOA(TheOASysProperties properties, String ticket){
         Map<String, String> params = new HashMap<>(16);
-        params.put("from", targetSysService.queryByTargetSysName(targetSystemName).getHandshakeBean());
+        params.put("from", properties.getHandshakeBean());
         params.put("ticket", ticket);
-        Map<String, String> responseHeaders = loginToOtherSysHttpPost(targetSysService.queryByTargetSysName(targetSystemName)
-                                                                        .getSsoLoginUrl(), params);
+        Map<String, String> responseHeaders = loginToOtherSysHttpPost(properties.getSsoLoginUrl(), params);
         LOGGER.info("已完成与目标系统的握手访问");
         if (responseHeaders.get(SSO_OK) != null) {
             LOGGER.info("握手成功");
@@ -170,13 +172,19 @@ public class UserController {
     }
 
 	@RequestMapping(value = "/loginTo", method = RequestMethod.POST)
-	public ModelAndView loginToOtherSystem(@RequestParam String oaUserName, @RequestParam String targetSystemName){
+	public ModelAndView loginToOtherSystem(HttpServletRequest request){
 
-        TargetSystem targetSystem = targetSysService.queryByTargetSysName(targetSystemName);
-        String ticket = createTicket(targetSystem.getTargetSysName(), oaUserName);
-        if (handShakeWithOA(targetSystemName, ticket)) {
+        HttpSession session = request.getSession();
+        context = new AnnotationConfigApplicationContext(TargetSystemConfig.class);
+        TheOASysProperties properties = (TheOASysProperties) context.getBean("The_OA_Properties");
+        LOGGER.info("成功获取到OA单点登入的配置文件信息");
+        if (session.getAttribute(USER_NAME_IN_SESSION) == null){
+            return new ModelAndView("/login_error");
+        }
+        String ticket = createTicket(((String) session.getAttribute(USER_NAME_IN_SESSION)));
+        if (handShakeWithOA(properties, ticket)) {
             LOGGER.info("用户已成功登入到目标系统");
-            return new ModelAndView("redirect:" + "");
+            return new ModelAndView("redirect:" + properties.getRedirectUrl());
         }
         LOGGER.warn("登入目标系统出错");
         return new ModelAndView("/login_error");

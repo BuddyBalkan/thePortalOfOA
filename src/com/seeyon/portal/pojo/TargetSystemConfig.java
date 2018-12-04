@@ -21,11 +21,15 @@ public class TargetSystemConfig {
     @Value("handshake_bean")
     private String handshakeBean;
 
+    @Value("redirect_url")
+    private String redirectUrl;
+
     @Bean(name = "The_OA_Properties")
     public TheOASysProperties getProperties(){
         properties = new TheOASysProperties();
         this.properties.setSsoLoginUrl(loginUrl);
         this.properties.setHandshakeBean(handshakeBean);
+        this.properties.setRedirectUrl(redirectUrl);
         return this.properties;
     }
 
@@ -33,29 +37,5 @@ public class TargetSystemConfig {
     public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer(){
         return new PropertySourcesPlaceholderConfigurer();
     }
-
-    class TheOASysProperties{
-        private String ssoLoginUrl;
-
-        private String handshakeBean;
-
-        public String getSsoLoginUrl() {
-            return ssoLoginUrl;
-        }
-
-        public void setSsoLoginUrl(String ssoLoginUrl) {
-            this.ssoLoginUrl = ssoLoginUrl;
-        }
-
-        public String getHandshakeBean() {
-            return handshakeBean;
-        }
-
-        public void setHandshakeBean(String handshakeBean) {
-            this.handshakeBean = handshakeBean;
-        }
-
-    }
-
 
 }
