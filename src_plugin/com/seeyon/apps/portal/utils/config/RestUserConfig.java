@@ -13,7 +13,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
  * 用于封装并读取resource中URLs的RESTUser.properties
  */
 @Configuration
-@PropertySource(value = "classpath:properties/RESTUser.properties")
+@PropertySource(value = "classpath:plugin/portal/config/RESTUser.properties")
 public class RestUserConfig {
 
     private RestUser user;
@@ -26,6 +26,9 @@ public class RestUserConfig {
 
     @Value("${RESTUserForTokenUrl}")
     private String restUserUrl;
+    
+    @Value("${UrlPath}")
+    private String urlPath;
 
     @Bean(name = "RestUser")
     public RestUser getUser(){
@@ -33,6 +36,7 @@ public class RestUserConfig {
         user.setUserName(userName);
         user.setPassword(password);
         user.setRestUserUrl(restUserUrl);
+        user.setUrlPath(urlPath);
         return user;
     }
 

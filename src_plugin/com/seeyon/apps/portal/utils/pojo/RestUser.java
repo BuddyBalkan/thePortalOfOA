@@ -12,6 +12,7 @@ public class RestUser {
     private String userName;
     private String password;
     private transient String restUserUrl;
+    private transient String urlPath;
 
     public String getUserName() {
         return userName;
@@ -36,8 +37,16 @@ public class RestUser {
     public void setRestUserUrl(String restUserUrl) {
         this.restUserUrl = restUserUrl;
     }
+    
+    public String getUrlPath() {
+		return urlPath;
+	}
 
-    @Override
+	public void setUrlPath(String urlPath) {
+		this.urlPath = urlPath;
+	}
+
+	@Override
     public String toString() {
         return "RestUser{" +
                 "userName='" + userName + '\'' +

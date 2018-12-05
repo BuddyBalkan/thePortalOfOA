@@ -3,6 +3,7 @@ package com.seeyon.apps.portal.controller;
 import com.google.gson.Gson;
 import com.seeyon.apps.portal.utils.config.TargetSystemConfig;
 import com.seeyon.apps.portal.utils.pojo.TheOASysProperties;
+import com.seeyon.apps.portal.utils.pojo.Ticket;
 import org.apache.http.Header;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -42,7 +43,7 @@ public class HomePageController {
     private static final String SSO_OK = "SSOOK";
     private static final String SSO_ERROR = "SSOError";
 
-    private Logger LOGGER = LoggerFactory.getLogger(HomePageController.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(HomePageController.class);
 
     /**
      * 根据目标系统名称以及登入用户名生成ticket
@@ -50,7 +51,7 @@ public class HomePageController {
      * @param userNameForTargetSys 登入用户名
      * @return ticket的json字符串
      */
-    public String createTicket(String userNameForTargetSys){
+    private String createTicket(String userNameForTargetSys){
         Ticket ticket = new Ticket();
         try {
             ticket.setLoginUserName(new String(userNameForTargetSys.getBytes("UTF-8")));
@@ -67,7 +68,7 @@ public class HomePageController {
      * @param ticket ticket的json字符串
      * @return 是否握手成功
      */
-    public boolean handShakeWithOA(TheOASysProperties properties, String ticket){
+    private boolean handShakeWithOA(TheOASysProperties properties, String ticket){
         Map<String, String> params = new HashMap<>(16);
         params.put("from", properties.getHandshakeBean());
         params.put("ticket", ticket);
@@ -92,7 +93,7 @@ public class HomePageController {
      * @param params 握手时候所要传入的参数
      * @return 目前仅限OA系统 故返回response的headers map形式
      */
-    public Map<String, String> loginToOtherSysHttpPost(String url, Map<String, String> params){
+    private Map<String, String> loginToOtherSysHttpPost(String url, Map<String, String> params){
         // 创建Httpclient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
@@ -102,8 +103,6 @@ public class HomePageController {
         try {
             // 创建Http Post请求
             HttpPost httpPost = new HttpPost(url);
-
-
             // 创建参数列表
             if (params != null) {
                 List<NameValuePair> paramList = new ArrayList<NameValuePair>();
@@ -131,7 +130,6 @@ public class HomePageController {
                 e.printStackTrace();
             }
         }
-
         return result;
     }
 
@@ -161,21 +159,7 @@ public class HomePageController {
 
     }
 
-    /**
-     * 临时使用 用于生成ticket的json类
-     */
-    class Ticket {
 
-        private String loginUserName;
-
-        public String getLoginUserName() {
-            return loginUserName;
-        }
-
-        public void setLoginUserName(String loginUserName) {
-            this.loginUserName = loginUserName;
-        }
-    }
 
 
 }

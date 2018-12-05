@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="spadeSSO_systemInitializer" class="com.seeyon.apps.spadeSSO.SpadeSSOInitializer">
+        <property name="sortOrder">
+            <value>7</value>
+        </property>
+    </bean>
+
+</beans>

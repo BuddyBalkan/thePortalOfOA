@@ -29,7 +29,12 @@ public class RestWebServiceClient{
     
     private AnnotationConfigApplicationContext context;
     
-    public static RestWebServiceClient getRestWebServiceClientUtil() {
+    
+    public CTPRestClient getClient() {
+		return client;
+	}
+
+	public static RestWebServiceClient getRestWebServiceClientUtil() {
     	return new RestWebServiceClient(); 
     }
 	

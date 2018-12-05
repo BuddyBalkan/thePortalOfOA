@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <import resource="spring-portal-dao.xml"/>
+    <import resource="spring-portal-service.xml"/>
+    <import resource="spring-portal-transaction.xml"/>
+
+    <bean name="portal_systemInitializer" class="com.seeyon.apps.portal.initialization.PortalInitializer">
+        <property name="sortOrder">
+            <value>7</value>
+        </property>
+    </bean>
+
+</beans>

@@ -1,12 +1,7 @@
 package com.seeyon.apps.portal.service.impl;
 
-import com.seeyon.portal.restusertools.GetRestUserToken;
 import com.seeyon.apps.portal.service.UserService;
-import com.seeyon.apps.portal.utils.HttpClientUtil;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import com.seeyon.apps.portal.utils.RestWebServiceClient;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,16 +23,10 @@ public class UserServiceImpl implements UserService {
             LOGGER.debug("密码不能为空");
             return null;
         }
-		Map<String , String> param = new HashMap();
-		param.put("password", password);
-		Map<String ,String> header = new HashMap();
-		GetRestUserToken restUser = new GetRestUserToken(); 
-		try {
-			header.put("token", restUser.getToken().toString());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		String json = HttpClientUtil.doGet("http://127.0.0.1/seeyon/rest/orgMember/effective/loginName/"+loginName, param, header);
+		
+		String json = RestWebServiceClient.getRestWebServiceClientUtil().
+				getClient().get("http://127.0.0.1/seeyon/rest/orgMember/effective/loginName/"+loginName+"?password="+password, 
+						String.class);
 		return json;
 	}
     

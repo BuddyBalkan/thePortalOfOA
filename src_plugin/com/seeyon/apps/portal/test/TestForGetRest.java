@@ -5,7 +5,6 @@ import com.seeyon.apps.portal.utils.config.RestUserConfig;
 import com.seeyon.apps.portal.utils.pojo.RestUser;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import com.seeyon.portal.restusertools.GetRestUserToken;
 
 import java.io.IOException;
 
@@ -41,13 +40,12 @@ public class TestForGetRest {
      * 使用httpclient向OA系统请求Rest用户的token
      * 将在控制台输出OA系统返回的token
      */
-    @Test
+    /*@Test
     public void test3(){
-        GetRestUserToken getRestUserToken = new GetRestUserToken();
         try {
             System.out.println(getRestUserToken.getToken());
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }

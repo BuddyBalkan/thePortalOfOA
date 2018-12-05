@@ -28,19 +28,19 @@ import com.seeyon.apps.portal.utils.XML.OrgPostDom4j;
  * 同步各组织机构数据到List集合
  */
 public class XMLtoPojo {
-	private static Logger LOGGER=LoggerFactory.getLogger(RestWebServiceClient.class);
+	public static Logger LOGGER=LoggerFactory.getLogger(RestWebServiceClient.class);
 	//获取xml数据
-	private static String xml= RestWebServiceClient
+	public static String xml= RestWebServiceClient
 			.getRestWebServiceClientUtil().getOrganizationXML("微鑫通时代科技有限公司");
 	
 	//存放部门信息
-	private static List<Department> departments;
+	public static List<Department> departments;
 	//存放岗位信息
-	private static List<OrgPost> orgPosts;
+	public static List<OrgPost> orgPosts;
 	//存放职位信息
-	private static List<OrgLevel> orgLevels;
+	public static List<OrgLevel> orgLevels;
 	//存放人员信息
-	private static List<Member> members;
+	public static List<Member> members;
 	
 	public static void synchronization() throws DocumentException {
 		//将字符串转换为document对象
